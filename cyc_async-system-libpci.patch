@@ -1,0 +1,37 @@
+--- cyc_async-6.6.1/common/cyclades-z/Makefile.orig	Tue Mar 26 21:10:43 2002
++++ cyc_async-6.6.1/common/cyclades-z/Makefile	Wed Oct 30 13:22:13 2002
+@@ -7,8 +7,8 @@
+ LDFLAGS=$(CFLAGS)
+ 
+ XLIBS=-L/usr/X11R6/lib -lXext -lX11
+-OTHERLIBS=-lc
+-LIBS=$(XLIBS) $(OTHERLIBS)
++OTHERLIBS=-lpci
++LDLIBS=$(OTHERLIBS)
+ 
+ PREFIX=/usr
+ 
+@@ -17,20 +17,12 @@
+ 
+ export
+ 
+-TARGETS=lib cyzload cyzutil
++TARGETS=cyzload cyzutil
+ 
+ all:: $(TARGETS)
+ 
+-lib: lib/libpci.a lib/config.h
+-
+-lib/libpci.a: lib/config.h
+-	$(MAKE) -C lib all
+-
+-lib/config.h:
+-	cd lib && ./configure $(PREFIX) $(PCILIB_VERSION)
+-
+-cyzload: cyzload.o lib/libpci.a
+-cyzutil: cyzutil.o lib/libpci.a
++cyzload: cyzload.o
++cyzutil: cyzutil.o
+ 
+ cyzload.o: cyzload.c
+ cyzutil.o: cyzutil.c

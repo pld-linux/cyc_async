@@ -1,0 +1,11 @@
+--- cyc_async-6.6.1/common/cyclades-z/cyzload.c.orig	Wed Apr  5 02:44:07 2000
++++ cyc_async-6.6.1/common/cyclades-z/cyzload.c	Wed Oct 30 13:22:40 2002
+@@ -53,7 +53,7 @@
+ enum ZFUNCTION_TYPE function = ZFUNCTION_UNKNOWN;
+ 
+ #define MEM_DEV "/dev/mem"
+-#define FIRMWARE_DEFAULT_FILE "/usr/local/lib/cyzfirm.bin"
++#define FIRMWARE_DEFAULT_FILE "/usr/share/cyc_async/cyzfirm.bin"
+ #define BOOT_BUF_SIZE 0x400
+ #define RAM_SIZE 0x80000
+ 
