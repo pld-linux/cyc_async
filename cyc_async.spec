@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Networking
 # "stable": ftp://ftp.cyclades.com/pub/cyclades/async/linux/%{name}-659.tgz
 Source0:	ftp://ftp.cyclades.com/pub/cyclades/async/linux/beta/%{name}-%{version}.tgz
+# Source0-md5:	12b875027b32842623052b4dba423d17
 Patch0:		%{name}-system-libpci.patch
 Patch1:		%{name}-cyzfirm-path.patch
 URL:		http://www.cyclades.com/
