@@ -1,5 +1,5 @@
 Summary:	Utilities for Cyclades-Z and Cyclom-Y asynchronous multiport boards
-Summary(pl):	Narzêdzia dla asynchronicznych kart wieloportowych Cyclades-Z i Cyclom-Y
+Summary(pl.UTF-8):   NarzÄ™dzia dla asynchronicznych kart wieloportowych Cyclades-Z i Cyclom-Y
 Name:		cyc_async
 Version:	6.6.1
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Utilities for Cyclades-Z and Cyclom-Y asynchronous multiport boards.
 
-%description -l pl
-Narzêdzia dla asynchronicznych kart wieloportowych Cyclades-Z i
+%description -l pl.UTF-8
+NarzÄ™dzia dla asynchronicznych kart wieloportowych Cyclades-Z i
 Cyclom-Y.
 
 %prep
